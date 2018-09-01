@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Print number pyramid</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Print Pyramid Pattern</h1>
+            <script>
+                 var x=1,i,j,k;
+                
+                 for(i=1;i<=4;i++){
+                     for(j=4;j>i;j--) {
+                         document.write("&nbsp&nbsp");
+                            }
+                     for(k=1;k<=i;k++)  {
+                        document.write((x)+"&nbsp&nbsp");
+                         x=x+1;
+                           }
+                       document.write("</br>");  
+                  }
+      
+     
+                </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Rotation Image</title>
+     <style>
+
+#img{
+    animation: shimmy 5s infinite;
+    
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(100px, 100px);    
+  }
+  25% {
+    transform: translate(400px, 100px);    
+  }
+  50% {
+    transform: translate(400px, 400px);    
+
+  }
+  75% {
+    transform: translate(100px, 400px);
+  }
+  100% {
+    transform: translate(100px, 100px);    
+
+  }
+}
+</style>
+</head>
+ <body > 
+     
+        <img src="download.jpeg" width="100px" id="img" > 
+
+
+ </body>
+</html>

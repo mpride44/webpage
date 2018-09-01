@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>HTML and JavaScript</title>
+<script>
+var imgArray = new Array(4);
+var index = 0;
+function cycle()
+{
+document.banner.src = imgArray[index].src;
+index++;
+if (index > 3)
+{
+index = 0;
+}
+setTimeout("cycle()", 2000);
+return;
+}
+function startup()
+{
+imgArray[0] = new Image;
+imgArray[0].src = "lion.jpg";
+imgArray[1] = new Image;
+imgArray[1].src = "tiger.jpg";
+imgArray[2] = new Image;
+imgArray[2].src = "bear.jpg";
+imgArray[3] = new Image;
+imgArray[3].src = "deer.jpg";
+cycle();
+return;
+}
+</script>
+</head>
+<body onLoad="startup()">
+<div align="center">
+<img name="banner" src="lion.jpg">
+</div>
+</body>
+</html>
